@@ -1,0 +1,205 @@
+00:03:11 **** Build of configuration Debug for project source ****
+make all 
+Building file: ../Graphe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Graphe.d" -MT"Graphe.o" -o "Graphe.o" "../Graphe.cpp"
+Finished building: ../Graphe.cpp
+ 
+Building file: ../ReseauInterurbain.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReseauInterurbain.d" -MT"ReseauInterurbain.o" -o "ReseauInterurbain.o" "../ReseauInterurbain.cpp"
+Finished building: ../ReseauInterurbain.cpp
+ 
+Building target: libsource.a
+Invoking: GCC Archiver
+ar -r  "libsource.a"  ./Graphe.o ./ReseauInterurbain.o   
+ar: création de libsource.a
+Finished building target: libsource.a
+ 
+00:03:18 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/TP2.5/source/Debug" -o "TP2"  ./Principal.o   -lsource
+./Principal.o : Dans la fonction « main » :
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::ReseauInterurbain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long) »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:77 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:78 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+makefile:44 : la recette pour la cible « TP2 » a échouée
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:102 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:117 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:127 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+/home/etudiant/workspace/TP2.5/source/Debug/libsource.a(ReseauInterurbain.o) : Dans la fonction « TP2::ReseauInterurbain::chargerReseau(std::basic_ifstream<char, std::char_traits<char> >&) » :
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:33 : référence indéfinie vers « TP2::Graphe::resize(unsigned long) »
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:41 : référence indéfinie vers « TP2::Graphe::nommer(unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:60 : référence indéfinie vers « TP2::Graphe::getNumeroSommet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const »
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:60 : référence indéfinie vers « TP2::Graphe::getNumeroSommet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const »
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:60 : référence indéfinie vers « TP2::Graphe::ajouterArc(unsigned long, unsigned long, float, float) »
+collect2: error: ld returned 1 exit status
+make: *** [TP2] Erreur 1
+00:03:19 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+00:11:01 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/TP2.5/source/Debug" -o "TP2"  ./Principal.o   -lsource
+./Principal.o : Dans la fonction « main » :
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::ReseauInterurbain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long) »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:77 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:78 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+makefile:44 : la recette pour la cible « TP2 » a échouée
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:102 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:117 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:127 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+/home/etudiant/workspace/TP2.5/source/Debug/libsource.a(ReseauInterurbain.o) : Dans la fonction « TP2::ReseauInterurbain::chargerReseau(std::basic_ifstream<char, std::char_traits<char> >&) » :
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:33 : référence indéfinie vers « TP2::Graphe::resize(unsigned long) »
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:41 : référence indéfinie vers « TP2::Graphe::nommer(unsigned long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:60 : référence indéfinie vers « TP2::Graphe::getNumeroSommet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const »
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:60 : référence indéfinie vers « TP2::Graphe::getNumeroSommet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const »
+/home/etudiant/workspace/TP2.5/source/Debug/../ReseauInterurbain.cpp:60 : référence indéfinie vers « TP2::Graphe::ajouterArc(unsigned long, unsigned long, float, float) »
+collect2: error: ld returned 1 exit status
+make: *** [TP2] Erreur 1
+00:11:02 **** Incremental Build of configuration Debug for project source ****
+make all 
+Building file: ../Graphe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Graphe.d" -MT"Graphe.o" -o "Graphe.o" "../Graphe.cpp"
+../Graphe.cpp: In member function ‘bool TP2::Graphe::arcExiste(size_t, size_t) const’:
+../Graphe.cpp:46:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Graphe.cpp: In member function ‘std::vector<long unsigned int> TP2::Graphe::listerSommetsAdjacents(size_t) const’:
+../Graphe.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Graphe.cpp: In member function ‘std::__cxx11::string TP2::Graphe::getNomSommet(size_t) const’:
+../Graphe.cpp:54:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Graphe.cpp: In member function ‘size_t TP2::Graphe::getNumeroSommet(const string&) const’:
+../Graphe.cpp:58:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Graphe.cpp: In member function ‘int TP2::Graphe::getNombreSommets() const’:
+../Graphe.cpp:62:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Graphe.cpp: In member function ‘int TP2::Graphe::getNombreArcs() const’:
+../Graphe.cpp:66:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Graphe.cpp: In member function ‘TP2::Ponderations TP2::Graphe::getPonderationsArc(size_t, size_t) const’:
+../Graphe.cpp:70:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Graphe.cpp
+ 
+Building target: libsource.a
+Invoking: GCC Archiver
+ar -r  "libsource.a"  ./Graphe.o ./ReseauInterurbain.o   
+ar: création de libsource.a
+Finished building target: libsource.a
+ 
+00:11:20 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/TP2.5/source/Debug" -o "TP2"  ./Principal.o   -lsource
+./Principal.o : Dans la fonction « main » :
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::ReseauInterurbain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long) »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:77 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:78 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:102 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:117 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:127 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+collect2: error: ld returned 1 exit status
+make: *** [TP2] Erreur 1
+makefile:44 : la recette pour la cible « TP2 » a échouée
+00:11:20 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+00:11:21 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/TP2.5/source/Debug" -o "TP2"  ./Principal.o   -lsource
+./Principal.o : Dans la fonction « main » :
+makefile:44 : la recette pour la cible « TP2 » a échouée
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::ReseauInterurbain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long) »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:77 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:78 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:102 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:117 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:127 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+collect2: error: ld returned 1 exit status
+make: *** [TP2] Erreur 1
+00:11:22 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+00:12:26 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/TP2.5/source/Debug" -o "TP2"  ./Principal.o   -lsource
+./Principal.o : Dans la fonction « main » :
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::ReseauInterurbain(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long) »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:77 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:78 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:102 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:117 : référence indéfinie vers « TP2::ReseauInterurbain::rechercheCheminDijkstra(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) const »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:127 : référence indéfinie vers « TP2::ReseauInterurbain::algorithmeKosaraju[abi:cxx11]() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+/home/etudiant/workspace/TP2.5/TP2/Debug/../Principal.cpp:25 : référence indéfinie vers « TP2::ReseauInterurbain::~ReseauInterurbain() »
+collect2: error: ld returned 1 exit status
+make: *** [TP2] Erreur 1
+makefile:44 : la recette pour la cible « TP2 » a échouée
+00:12:26 **** Incremental Build of configuration Debug for project source ****
+make all 
+Building file: ../ReseauInterurbain.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReseauInterurbain.d" -MT"ReseauInterurbain.o" -o "ReseauInterurbain.o" "../ReseauInterurbain.cpp"
+../ReseauInterurbain.cpp: In member function ‘TP2::Chemin TP2::ReseauInterurbain::rechercheCheminDijkstra(const string&, const string&, bool) const’:
+../ReseauInterurbain.cpp:82:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../ReseauInterurbain.cpp: In member function ‘std::vector<std::vector<std::__cxx11::basic_string<char> > > TP2::ReseauInterurbain::algorithmeKosaraju()’:
+../ReseauInterurbain.cpp:86:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../ReseauInterurbain.cpp
+ 
+Building target: libsource.a
+Invoking: GCC Archiver
+ar -r  "libsource.a"  ./Graphe.o ./ReseauInterurbain.o   
+ar: création de libsource.a
+Finished building target: libsource.a
+ 
+00:12:37 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+Building target: TP2
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/TP2.5/source/Debug" -o "TP2"  ./Principal.o   -lsource
+Finished building target: TP2
+ 
+00:12:38 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+00:12:43 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+make: rien à faire pour « all ».
+00:13:06 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+make: rien à faire pour « all ».
+00:13:41 **** Incremental Build of configuration Debug for project TP2 ****
+make all 
+make: rien à faire pour « all ».

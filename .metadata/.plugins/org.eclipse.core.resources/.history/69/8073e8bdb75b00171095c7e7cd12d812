@@ -1,0 +1,20 @@
+/**
+ * \file Graphe.cpp
+ * \brief Implémentation d'un graphe orienté.
+ * \author ?
+ * \version 0.5
+ * \date ?
+ *
+ *  Travail pratique numéro 2
+ *
+ */
+
+#include "Graphe.h"
+#include "AssertionException.h"
+//vous pouvez inclure d'autres librairies si c'est nécessaire
+
+namespace TP2
+{
+	//Mettez l'implémentation de vos méthodes ici.
+
+}//Fin du namespace
